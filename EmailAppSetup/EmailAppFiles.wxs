@@ -1,0 +1,9 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <ComponentGroup Id="AppComponents" Directory="INSTALLFOLDER">
+		<Files Include="!(bindpath.EmailApp)**">
+			<Exclude Files="!(bindpath.EmailApp)**\*.pdb" />
+		</Files>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

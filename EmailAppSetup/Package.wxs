@@ -1,0 +1,11 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Id="MiaLeang.EmailApp" Name="EmailApp" Manufacturer="Mia Leang" Version="1.0.0" UpgradeCode="438D7F6C-0758-462D-8119-A9BF757BC76D">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+	  <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="AppComponents" />
+    </Feature>
+  </Package>
+</Wix>
